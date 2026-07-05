@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --color-espresso: #2b211a;
+  --color-tweed: #6b4f3a;
+  --color-camel: #a9825f;
+  --color-oat: #f5efe6;
+  --color-cream: #fbf8f2;
+  --color-moss: #4c6b4f;
+
+  --font-display: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  @apply bg-oat font-sans text-espresso antialiased;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-tweed);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+::selection {
+  background: var(--color-camel);
+  color: var(--color-espresso);
+}
+
+/* Blinking block cursor for the hero terminal */
+@keyframes tidy-blink {
+  0%,
+  49% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.cursor-block {
+  animation: tidy-blink 1.1s step-end infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cursor-block {
+    animation: none;
+  }
+}
