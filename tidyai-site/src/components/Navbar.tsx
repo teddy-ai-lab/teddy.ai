@@ -10,7 +10,7 @@ const LINKS = [
   { label: "Benchmarks", href: "#benchmarks" },
 ];
 
-const GITHUB_URL = "https://github.com/harish-ai-engineer";
+const GITHUB_URL = "https://github.com/teddy-ai-lab";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);

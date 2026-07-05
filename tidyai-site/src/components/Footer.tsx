@@ -5,22 +5,22 @@ import Logo from "./Logo";
 const SOCIALS = [
   {
     label: "GitHub",
-    href: "https://github.com/harish-ai-engineer",
+    href: "https://github.com/teddy-ai-lab",
     Icon: GithubIcon,
   },
   {
     label: "X (Twitter)",
-    href: "https://x.com/harishaiengineer",
+    href: "https://x.com/teddyXai",
     Icon: XIcon,
   },
   {
     label: "Instagram",
-    href: "https://instagram.com/harishaiengineer",
+    href: "https://www.instagram.com/adteddy.ai/",
     Icon: InstagramIcon,
   },
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/in/harish-ai-engineer",
+    href: "https://www.linkedin.com/in/teddyai",
     Icon: LinkedinIcon,
   },
 ];
@@ -29,7 +29,7 @@ const FOOTER_LINKS = [
   { label: "agentcontext", href: "https://github.com/harish-ai-engineer/agentcontext" },
   { label: "diskteddy", href: "https://github.com/harish-ai-engineer/diskteddy" },
   { label: "devteddy", href: "https://github.com/harish-ai-engineer/devteddy" },
-  { label: "GitHub profile", href: "https://github.com/harish-ai-engineer" },
+  { label: "GitHub profile", href: "https://github.com/teddy-ai-lab" },
 ];
 
 export default function Footer() {

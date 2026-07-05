@@ -121,7 +121,7 @@ export default function Hero() {
               <ArrowDown size={18} aria-hidden="true" />
             </a>
             <a
-              href="https://github.com/harish-ai-engineer"
+              href="https://github.com/teddy-ai-lab"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-lg border-2 border-espresso px-6 py-[10px] font-semibold text-espresso transition-colors hover:bg-espresso hover:text-cream"
