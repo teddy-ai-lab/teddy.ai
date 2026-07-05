@@ -3,7 +3,10 @@ import type { Variants } from "framer-motion";
 import { ArrowDown, Star } from "lucide-react";
 import Terminal from "./Terminal";
 
-const HEADLINE = "Clean foundations for building with AI.";
+const HEADLINE_LINES = [
+  ["AI", "development", "is", "messy."],
+  ["teddy.ai", "isn't."],
+];
 
 const headlineContainer: Variants = {
   hidden: {},
@@ -62,7 +65,6 @@ function TidyField() {
 
 export default function Hero() {
   const reduced = useReducedMotion();
-  const words = HEADLINE.split(" ");
 
   return (
     <section id="top" className="relative overflow-hidden">
@@ -75,15 +77,19 @@ export default function Hero() {
             animate="show"
             className="font-display text-4xl font-extrabold leading-[1.08] tracking-tight text-espresso sm:text-5xl lg:text-6xl"
           >
-            {words.map((word, i) => (
-              <span key={`${word}-${i}`}>
-                <motion.span
-                  variants={headlineWord}
-                  className={`inline-block ${word === "AI." ? "text-tweed" : ""}`}
-                >
-                  {word}
-                </motion.span>
-                {i < words.length - 1 && " "}
+            {HEADLINE_LINES.map((line, li) => (
+              <span key={li} className="block">
+                {line.map((word, wi) => (
+                  <span key={`${word}-${wi}`}>
+                    <motion.span
+                      variants={headlineWord}
+                      className={`inline-block ${word === "teddy.ai" ? "font-mono text-tweed" : ""}`}
+                    >
+                      {word}
+                    </motion.span>
+                    {wi < line.length - 1 && " "}
+                  </span>
+                ))}
               </span>
             ))}
           </motion.h1>
@@ -95,9 +101,9 @@ export default function Hero() {
             transition={{ delay: 0.55 }}
             className="mt-6 max-w-xl text-lg leading-relaxed text-espresso/75"
           >
-            Small, honest developer tools: a parser whose every output carries
-            provenance, and cleanup utilities that never delete before you
-            decide.
+            Clean foundations for agents, pipelines, and the teams that build
+            them — a parser whose every output carries provenance, and cleanup
+            utilities that never delete before you decide.
           </motion.p>
 
           <motion.div

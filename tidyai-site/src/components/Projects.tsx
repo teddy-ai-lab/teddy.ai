@@ -18,7 +18,7 @@ const PROJECTS: Project[] = [
   {
     name: "diskteddy",
     description:
-      "See where your disk space went and reclaim it safely — Docker build cache, WSL2 .vhdx bloat, npm/pip caches. Never touches volumes, tagged images, or your data.",
+      "Reclaim the disk space AI development quietly eats — Docker build cache, WSL2 .vhdx bloat, npm/pip caches. Never touches volumes, tagged images, or your data.",
     install: "pipx install disktidy",
     github: "https://github.com/harish-ai-engineer/diskteddy",
     pypi: "https://pypi.org/project/disktidy/",
@@ -27,7 +27,7 @@ const PROJECTS: Project[] = [
   {
     name: "devteddy",
     description:
-      "Find stale node_modules, virtualenvs, and build outputs — with evidence-based matching. Archive with a manifest and restore later, or delete only when you say so.",
+      "Stale environments and dead artifacts, safely gone — node_modules, virtualenvs, and build outputs found with evidence-based matching. Archive with a manifest and restore later, or delete only when you say so.",
     install: "pipx install devtidy",
     github: "https://github.com/harish-ai-engineer/devteddy",
     pypi: "https://pypi.org/project/devtidy/",
